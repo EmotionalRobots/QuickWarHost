@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">QuickWarTablet</string>
+    <string name="host_game">Host Game</string>
+    <string name="how_to_play">How To Play</string>
+    <string name="game_instructions_go_here">Game instructions go here</string>
+    <string name="id_number"><![CDATA[<id number>]]></string>
+    <string name="instructions2">Enter this number on both mobile devices</string>
+    <string name="lobby_label">Your unique game ID:</string>
+    <string name="title_activity_winner">WinnerActivity</string>
+</resources>
