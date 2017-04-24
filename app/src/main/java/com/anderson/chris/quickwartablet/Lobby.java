@@ -19,10 +19,6 @@ public class Lobby extends AppCompatActivity {
     private static final String BUNDLE_EXTRAS = "BUNDLE_EXTRAS";
     private static final String EXTRA_GAME_ID = "EXTRA_GAME_ID";
 
-    private String uniqueId;
-    int minimum = 1000;
-    int maximum = 8999;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -37,18 +33,13 @@ public class Lobby extends AppCompatActivity {
             }
         });
 
-        generateUniqueId();
 
 //        while(playersConnected != 2){
 //
 //        }
     }
 
-    public void generateUniqueId() {
-        uniqueId = minimum + (int) (Math.random() * maximum) + "";
-        txtUniqueId = (TextView) findViewById(R.id.uniqueGameId);
-        txtUniqueId.setText(uniqueId);
-    }
+
 
     public void beginGame() {
 
@@ -57,7 +48,7 @@ public class Lobby extends AppCompatActivity {
 
         Bundle extras = new Bundle();
 
-        extras.putString(EXTRA_GAME_ID, uniqueId);
+//        extras.putString(EXTRA_GAME_ID, uniqueId);
 
         intent.putExtra(BUNDLE_EXTRAS, extras);
 

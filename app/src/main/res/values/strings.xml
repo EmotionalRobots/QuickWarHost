@@ -7,4 +7,5 @@
     <string name="instructions2">Enter this number on both mobile devices</string>
     <string name="lobby_label">Your unique game ID:</string>
     <string name="title_activity_winner">WinnerActivity</string>
+    <string name="title_activity_war">WarActivity</string>
 </resources>

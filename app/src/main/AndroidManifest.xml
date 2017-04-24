@@ -30,6 +30,11 @@
         <activity
             android:name=".WinnerActivity"
             android:label="@string/title_activity_winner"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".WarActivity"
+            android:label="@string/title_activity_war"
+            android:screenOrientation="landscape"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 

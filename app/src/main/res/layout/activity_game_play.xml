@@ -24,10 +24,11 @@
         app:layout_constraintHorizontal_bias="0.264"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toLeftOf="@+id/imgLogo"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
 
     <ImageView
-        android:id="@+id/imgPlayer1Card"
+        android:id="@+id/imgPlayer1Card1"
         android:layout_width="136dp"
         android:layout_height="185dp"
         android:layout_marginTop="262dp"
@@ -93,7 +94,7 @@
         android:textAlignment="center"
         android:textColor="?android:attr/colorMultiSelectHighlight"
         android:textSize="50dp"
-        app:layout_constraintBottom_toTopOf="@+id/imgPlayer1Card"
+        app:layout_constraintBottom_toTopOf="@+id/imgPlayer1Card1"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintVertical_bias="0.897"
         app:layout_constraintRight_toLeftOf="@+id/textView"
@@ -114,7 +115,7 @@
         android:textColor="@color/common_google_signin_btn_text_dark_default"
         android:textSize="36sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toRightOf="@+id/imgPlayer1Card"
+        app:layout_constraintLeft_toRightOf="@+id/imgPlayer1Card1"
         app:layout_constraintRight_toLeftOf="@+id/imgPlayer2Card"
         app:layout_constraintTop_toBottomOf="@+id/imgLogo"
         app:layout_constraintVertical_bias="0.448" />
@@ -133,7 +134,7 @@
         android:textSize="36sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.87"
-        app:layout_constraintLeft_toRightOf="@+id/imgPlayer1Card"
+        app:layout_constraintLeft_toRightOf="@+id/imgPlayer1Card1"
         app:layout_constraintRight_toLeftOf="@+id/txtScoreComparisonLabel"
         tools:layout_editor_absoluteX="391dp"
         tools:layout_editor_absoluteY="335dp" />
@@ -175,14 +176,14 @@
 
     <TextView
         android:id="@+id/txtxCountdown"
-        android:layout_width="83dp"
-        android:layout_height="68dp"
+        android:layout_width="62dp"
+        android:layout_height="67dp"
         android:layout_marginLeft="0dp"
         android:layout_marginRight="8dp"
-        android:layout_marginTop="46dp"
+        android:layout_marginTop="41dp"
         android:textColor="@color/common_google_signin_btn_text_dark_default"
         android:textSize="36sp"
-        app:layout_constraintHorizontal_bias="0.527"
+        app:layout_constraintHorizontal_bias="0.964"
         app:layout_constraintLeft_toRightOf="@+id/imgLogo"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -204,11 +205,11 @@
 
     <TextView
         android:id="@+id/txtShowGameID"
-        android:layout_width="157dp"
-        android:layout_height="61dp"
+        android:layout_width="156dp"
+        android:layout_height="53dp"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
-        android:layout_marginTop="73dp"
+        android:layout_marginTop="65dp"
         android:textAlignment="center"
         android:textColor="@color/common_google_signin_btn_text_dark_default"
         android:textSize="24sp"
@@ -216,5 +217,51 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toLeftOf="@+id/imgLogo"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtEnterIDLabel"
+        android:layout_width="526dp"
+        android:layout_height="39dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Enter this number on both mobile devices"
+        android:textColor="@color/common_google_signin_btn_text_dark_default"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="@+id/txtPlayer1Label"
+        app:layout_constraintTop_toBottomOf="@+id/txtShowGameID"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/txtHandsRemainingLabel"
+        android:layout_width="254dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="16dp"
+        android:textColor="@color/common_google_signin_btn_text_dark_default"
+        android:textSize="24sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        tools:layout_editor_absoluteY="24dp" />
+
+    <TextView
+        android:id="@+id/txtWarAlert"
+        android:layout_width="695dp"
+        android:layout_height="212dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="200sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.602"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.425" />
 
 </android.support.constraint.ConstraintLayout>
